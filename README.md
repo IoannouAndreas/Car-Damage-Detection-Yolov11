@@ -55,6 +55,8 @@ npm install react react-native react-native-paper react-native-reanimated react-
 You may also need to install required peer dependencies with:
 npx expo install react-native-gesture-handler react-native-screens react-native-safe-area-context
 
+also in the THESERVER.py the user must change the MODEL_PATH_PARTS and MODEL_PATH_DAMAGE paths acording too where the bestDamage_detection.pt and bestParts_Detection.pt are located in your system
+
 
 # Welcome to your Expo app 👋
 
