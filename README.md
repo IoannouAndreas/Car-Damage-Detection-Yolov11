@@ -1,61 +1,63 @@
-This is a project part of my thesis 
-Thesis Title:
-Detection and Recognition of Car Damages from Video Using Deep Learning
+# Car Damage Detection and Recognition from Video Using Deep Learning
 
-Implementation Details:
+## 📚 Thesis Project
+**Title:** Detection and Recognition of Car Damages from Video Using Deep Learning  
+**Author:** [Your Name]  
+**Model Used:** YOLOv11
 
-Segmentation Model: YOLOv11
+---
 
-Training Acceleration: CUDA 12.6
+## 🤖 Project Overview
+This project is part of a thesis that explores the use of deep learning models to detect and recognize car damages from images and videos. It includes:
 
-Demo Application: A React Native app (built with npx expo) that communicates with a Uvicorn/FastAPI server (also developed as part of the project)
+- A mobile app built with **React Native (Expo)**
+- A server-side implementation using **FastAPI + Uvicorn**
+- Two trained YOLOv11 models for:
+  - **Car Part Recognition**
+  - **Car Damage Recognition**
 
-App Features:
-A mobile app with a simple, user-friendly UI that leverages two pre-trained models:
+---
 
-Car Part Recognition Model
+## 🚗 App Features
+- **User-Friendly Interface:** Clean UI for seamless interaction
+- **Model Integration:** Utilizes two YOLOv11-based models
+- **Multi-Mode Analysis:**
+  - **Recognition from Photo**
+  - **Recognition from Video**
+  - **Car Part Recognition**
+  - **Car Damage Recognition**
+  - **Full Scan Mode:** Combines both recognitions
 
-Detects and recognizes the various parts of a car
+**Final Output:**
+- The app displays the image with detected damage.
+- Highlights the affected car part(s).
+- Displays a concluding message with recognition results.
 
-Both pre-trained models were trained using YOLOv11
+---
 
-Car Damage Recognition Model
+## ⚙️ Implementation Details
 
-Detects and analyzes damage on the car
+### Segmentation Model
+- YOLOv11 (trained separately for car parts and damage detection)
 
-Main Menu Structure:
+### Server Backend
+- **Python 3.8+** with **FastAPI** and **Uvicorn**
 
-Recognition from Photo
+### Training Acceleration
+- CUDA 12.6
 
-Recognition from Video
+### React Native App
+- Built using Expo (via `npx expo`)
 
-Within each category, the user can choose:
+---
 
-Car Part Recognition
+## 🚀 Getting Started
 
-Car Damage Recognition
-
-Full Scan — a combined mode that simultaneously identifies damage and pinpoints which car part is affected
-
-Final Output:
-The app displays the image with the detected damage, highlights the exact location of the damage, and shows a concluding message to inform the user.
-
-This project also contains a Python code that uses uvicorn to run as a server and the two trained models needed to run it sucsesfully 
-
-Make sure you have Python 3.8+ installed. To install the required Python packages, run:
-
-pip install fastapi uvicorn numpy pillow opencv-python ultralytics python-multipart moviepy
-
-Ensure you have Node.js and Expo CLI installed. If not:
-npm install -g expo-cli
-
-Then, inside your React Native project directory, install the necessary dependencies:
-npm install react react-native react-native-paper react-native-reanimated react-native-video @expo/vector-icons expo-camera expo-av expo-image-picker expo-media-library expo-router expo-constants
-
-You may also need to install required peer dependencies with:
-npx expo install react-native-gesture-handler react-native-screens react-native-safe-area-context
-
-also in the THESERVER.py the user must change the MODEL_PATH_PARTS and MODEL_PATH_DAMAGE paths acording too where the bestDamage_detection.pt and bestParts_Detection.pt are located in your system
+### Backend Setup
+1. Ensure **Python 3.8+** is installed.
+2. Install required packages:
+   ```bash
+   pip install fastapi uvicorn numpy pillow opencv-python ultralytics python-multipart moviepy
 
 
 # Welcome to your Expo app 👋
