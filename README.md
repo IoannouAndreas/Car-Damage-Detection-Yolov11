@@ -2,7 +2,7 @@
 
 ## 📚 Thesis Project
 **Title:** Detection and Recognition of Car Damages from Video Using Deep Learning  
-**Author:** [Your Name]  
+**Author:** Andreas Ioannou  
 **Model Used:** YOLOv11
 
 ---
