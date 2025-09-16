@@ -1,4 +1,4 @@
-# Car Damage Detection and Recognition from Video Using Deep Learning
+# Car Damage Detection and Recognition App Using Deep Learning
 
 ## 📚 Thesis Project
 **Title:** Detection and Recognition of Car Damages from Video Using Deep Learning  
