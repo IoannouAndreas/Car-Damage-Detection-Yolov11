@@ -1,4 +1,3 @@
-// src/utils/api.ts
 import Constants from 'expo-constants';
 
 // Get the Expo debugger host 
